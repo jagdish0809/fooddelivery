@@ -5,8 +5,6 @@
 
 ### state: prone to new features and code refactoring.
 
-### Demo: https://fast-food-delivery-app.herokuapp.com/
-
 ### To SEE admin features
 
 email: moderator@localhost.com
