@@ -63,15 +63,14 @@ export default function EmailConfirmationModal() {
     <Page>
       <MessageCard>
         <span>📬</span>
-        <h4>Tu cuenta necesita ser verificada</h4>
+        <h4>Your account needs to be verified</h4>
         <p>
-          Para poder gestionar su cuenta en la aplicación es necesario que
-          verifique su correo electronico. Al precionar el siguiente botón, un
-          mensaje le será enviado a su email con un link de verificación válido
-          por 24hs.
+          In order to manage your account in the application, you need to Verify
+          your email. By pressing the next button, a message will be sent to
+          your email with a valid verification link for 24 hours.
         </p>
         {isRequestLoading && <LoaderSpinner small />}
-        <button onClick={() => sendConfirmationEmail()}>Enviar Correo</button>
+        <button onClick={() => sendConfirmationEmail()}>Send mail</button>
       </MessageCard>
     </Page>
   );

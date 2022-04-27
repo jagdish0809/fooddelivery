@@ -89,7 +89,7 @@ export default function ShoppingCart() {
   return (
     <StyledCart isCartOpen={isCartOpen}>
       <CartHeader>
-        <CartTitle>Mi carrito</CartTitle>
+        <CartTitle>My cart</CartTitle>
       </CartHeader>
 
       {cartProducts?.length > 0 ? (
@@ -113,7 +113,7 @@ export default function ShoppingCart() {
             <MakeOrderButton onClick={handelOrder}>oder now</MakeOrderButton>
 
             <DeleteAllButton onClick={emptyCartAndResetTotalCost}>
-              Vaciar Carrito
+            Empty Cart
             </DeleteAllButton>
           </>
         )}

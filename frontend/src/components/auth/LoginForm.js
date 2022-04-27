@@ -38,7 +38,7 @@ export default function SinginForm({ setIsModalOpened }) {
         <ErrorServerMessage>{serverError}</ErrorServerMessage>
 
         <FormLink to="/authentication/singUp">
-          ¿Todavía no tienes una cuenta? <b>Sing Up</b>{" "}
+        You still do not have an account? <b>Sing Up</b>{" "}
         </FormLink>
         <FormLink as="a" onClick={() => setIsModalOpened(true)}>
           Forget your password?
