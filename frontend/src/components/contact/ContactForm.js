@@ -153,7 +153,7 @@ export default function ContactForm() {
 
           <TextInput
             type="text"
-            placeholder="Asunto..."
+            placeholder="business..."
             name="subject"
             ref={register({
               required: "*The field is required",
@@ -164,22 +164,22 @@ export default function ContactForm() {
             <ErrorMessage>{errors.userMessage.message}</ErrorMessage>
           )}
           <Textarea
-            placeholder="Tu mensaje..."
+            placeholder="Your message..."
             name="userMessage"
             ref={register({
-              required: "*El campo es requerido",
+              required: "*The field is required",
               maxLength: {
                 value: 255,
-                message: "*Tu mensaje no debe exceder los 255 carácteres",
+                message: "*Your message should not exceed 255 characters",
               },
             })}
             style={{ borderColor: errors.userMessage && "#bf0000" }}
           />
-          <ButtonPrimary as="input" type="submit" value="Enviar mensaje" />
+          <ButtonPrimary as="input" type="submit" value="send Message" />
         </Form>
       </FormSection>
       <InfoSection>
-        <ContactTitle>Contactenos</ContactTitle>
+        <ContactTitle>Contact Us</ContactTitle>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla accumsan
           metus. Ipsum dolor sit amet, consectetur adipiscing elit nulla

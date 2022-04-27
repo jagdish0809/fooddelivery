@@ -51,7 +51,7 @@ function Contact() {
   return (
     <StyledContactSection>
       <ContactBanner>
-        <BannerTitle>Ponte en Contact!!</BannerTitle>
+        <BannerTitle>GET IN CONTACTt!!</BannerTitle>
       </ContactBanner>
       <ContactForm />
       <NewsletterForm />

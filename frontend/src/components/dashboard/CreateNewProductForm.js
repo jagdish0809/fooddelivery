@@ -232,7 +232,7 @@ export function ProductSizeInput({ register, errors, defaultValue }) {
         name="size"
         defaultValue={defaultValue || ""}
         ref={register({
-          required: "*El campo es requerido",
+          required: "*The field is required",
           pattern: {
             value: /^(?:[0-9]+\s\w+[a-z]|[a-z]+[0-9])[a-z0-9]*$/i,
             message: "*Se require de un valor y unidad",
@@ -256,7 +256,7 @@ export function ProductDescriptionTextArea({ register, errors, defaultValue }) {
         name="description"
         data-testid="description"
         ref={register({
-          required: "*El campo es requerido",
+          required: "*The field is required",
         })}
       ></Description>
     </Fragment>
@@ -276,7 +276,7 @@ export function ProductPriceInput({ register, errors, defaultValue }) {
         data-testid="price"
         defaultValue={defaultValue || ""}
         ref={register({
-          required: "*El campo es requerido",
+          required: "*The field is required",
           pattern: {
             value: /\d+/,
             message: "*Se admiten solo números",
@@ -290,7 +290,7 @@ export function ImageUploader({ register, errors, isNotRequired }) {
   return (
     <Fragment>
       {errors.productImg && (
-        <ErrorMessage role="alert">*El Campo es requerido</ErrorMessage>
+        <ErrorMessage role="alert">*The field is require</ErrorMessage>
       )}
 
       <DropZone

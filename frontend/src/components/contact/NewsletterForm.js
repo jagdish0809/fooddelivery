@@ -60,7 +60,7 @@ align-items:center;
 `;
 const NewsletterInput= styled.input.attrs(props => ({
   type: 'text',
-  placeholder: 'Ingrese su email',
+  placeholder: 'enter your email',
 
 }))`
 padding: 17px 10px 17px 20px;
@@ -86,7 +86,7 @@ const {register,handleSubmit,errors,onSubmit} =useNewsletterForm()
 <StyledNewsletter>
   <Wrapper>
     <NewsletterText>
-      <NewsletterTitle>subscribete  a nuestro newsletter</NewsletterTitle>
+      <NewsletterTitle>SUBSCRIBE TO OUR NEWSLETTER</NewsletterTitle>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
     </NewsletterText>
     <StyledNewsletterForm onSubmit={handleSubmit(onSubmit)}>
@@ -106,7 +106,7 @@ const {register,handleSubmit,errors,onSubmit} =useNewsletterForm()
            style={{ borderColor: errors.userEmail && "#000" }}
         ></NewsletterInput>
       
-<Button as="input" type="submit" value="Subscribirme"/>
+<Button as="input" type="submit" value="subscribe"/>
 
       </NewsletterFormWrapper>
     </StyledNewsletterForm>
